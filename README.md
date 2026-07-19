@@ -1,6 +1,6 @@
 # Udyam Sahayak
 
-**Udyam Sahayak** (formerly Kisan Credit Copilot) is an offline-first, AI-assisted credit assessment platform designed for rural field officers evaluating SHGs, FPOs, and micro-enterprises.
+**Udyam Sahayak** is an offline-first, AI-assisted credit assessment platform designed for rural field officers evaluating SHGs, FPOs, and micro-enterprises.
 
 Developed for the **NABARD Hackathon @ Global Fintech Fest 2026 (Track 03)**.
 
