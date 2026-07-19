@@ -1,32 +1,49 @@
-# React + TypeScript + Vite
+# Udyam Sahayak Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is the frontend component of **Udyam Sahayak** (formerly Kisan Credit Copilot), an offline-first Progressive Web App (PWA) designed for field officers to assess rural SHGs/FPOs/micro-enterprises.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Framework:** React 19 + TypeScript + Vite
+- **Offline Storage:** IndexedDB (`idb`) and Service Workers (`vite-plugin-pwa`)
+- **Styling:** CSS Variables and modular architecture
+- **Inference:** On-device risk forecasting via transpiled JavaScript models (`m2cgen`)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Getting Started
 
-## React Compiler
+### Prerequisites
+- Node.js (v20+ recommended)
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### Running Locally
+To start the Vite development server:
+```bash
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### Building for Production
+To build the application and type-check:
+```bash
+npm run build
+```
+This generates optimized static files in the `dist` directory, fully prepared for deployment as an offline-capable PWA.
+
+## Features
+- **Offline-First Capabilities:** Complete assessments without connectivity. Automatic sync logic caches drafts and resolves them idempotently once the network is restored.
+- **On-Device Inference:** Deterministic, low-latency execution (< 50ms) using cluster-calibrated tree models transposed into pure JS.
+- **Vernacular Design:** Built for vernacular audiences, including deterministic audio and explanation text rendering for specific local clusters.
+
+## Linting
+This project uses `oxlint` for high-performance linting:
+```bash
+npm run lint
+```
