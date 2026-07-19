@@ -1,0 +1,57 @@
+/*
+  Udyam Sahayak — Design Tokens & Theme
+  Strictly adhering to UX_design_brief_final.md:
+  - Palette: Forest (#1F4D36), Ochre (#C97C3D), Navy (#0B1F3A)
+  - 48dp minimum touch targets
+  - 18px+ body text, 24px+ for numbers/tiers
+  - High outdoor contrast (WCAG AA)
+*/
+
+:root {
+  /* Core Color Palette */
+  --color-primary-forest: #1F4D36;
+  --color-primary-forest-light: #2A6648;
+  --color-primary-forest-dark: #143324;
+  
+  --color-accent-ochre: #C97C3D;
+  --color-accent-ochre-light: #D9955F;
+  --color-accent-ochre-dark: #A6602A;
+  
+  --color-authority-navy: #0B1F3A;
+  --color-authority-navy-light: #163661;
+  --color-authority-navy-dark: #061120;
+
+  /* Neutrals & Surfaces (High Contrast for Outdoor Sunlight) */
+  --color-bg-page: #F4F7F5;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-surface-alt: #E8EDE9;
+  --color-text-primary: #0B1F3A;
+  --color-text-secondary: #3D4A59;
+  --color-text-muted: #64748B;
+  --color-border: #C8D3CC;
+  --color-border-focus: #1F4D36;
+
+  /* Risk Tiers (Always used alongside Shape + Text) */
+  --color-risk-low: #1A7F4B;
+  --color-risk-low-bg: #E3F5EB;
+  --color-risk-medium: #BA7000;
+  --color-risk-medium-bg: #FFF3DD;
+  --color-risk-high: #C92A2A;
+  --color-risk-high-bg: #FCE8E8;
+
+  /* Touch Targets & Layout */
+  --min-touch-target: 48px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 4px 12px rgba(11, 31, 58, 0.08);
+  --shadow-elevated: 0 8px 24px rgba(11, 31, 58, 0.14);
+
+  /* Typography Scale */
+  --font-family-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-size-body: 18px;
+  --font-size-body-lg: 20px;
+  --font-size-title: 24px;
+  --font-size-heading: 28px;
+  --font-size-display: 36px;
+}
